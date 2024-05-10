@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>OneStopGym - Sign Up Now!</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="allstyles.css">
+    <link rel="stylesheet" href="membership.css">
+    <script src="member_validate.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header_container">
+            <br>
+            <nav class="navbar">
+                <div class="container">
+                    <ul>
+                        <img src="gym_logo.png" alt="Gym Logo" class="logo">
+                        <div class="logo_title">
+                            <li>OneStopGym</li>
+                        </div>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="membership.html"><u>Become a Member</u></a></li>
+                        <li><a href="trainers.html">Our Trainers</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="img_container">
+            <img src="guy_pushup.png" alt="Guy Doing Pushups">
+            <img src="women_push.png" alt="Women Doing Pushups">
+        </div>
+
+    </header>
+</body>
+
+<main>
+    <!--================= PRICING =================-->
+    <h2>Our Plans</h2>
+    <div class="container">
+        <div class="program_container grid">
+                <article class="program_card">
+                    <h3 class="program_title">Free</h3>
+                    <div class="program_shape">
+                        <img src="pricing_free.png" alt="Free Image" class="program_img">
+                    </div>
+                    <hr>
+                    <h4>Features:</h4>
+                    <ol class="feature_description">
+                        <li>Access to introductory classes</li>
+                        <li>Limited gym facility access during specified hours</li>
+                        <li>Basic fitness assessment</li>
+                        <li>Option to upgrade to paid plans at any time</li>
+                    </ol>
+                    <br>
+                    <br>
+                    <br>
+                    <h4 class="price">$0 for 30 days</h4>
+                </article>
+
+            <article class="program_card">
+                <h3 class="program_title">Month</h3>
+                <div class="program_shape">
+                    <img src="pricing_month.png" alt="Month Image" class="program_img">
+                </div>
+                <hr>
+                <h4>Features:</h4>
+                <ol class="feature_description">
+                    <li>Unlimited access to all gym facilities</li>
+                    <li>Unlimited attendance to all classes</li>
+                    <li>Ability to book classes in advance</li>
+                    <li>Option to cancel membership with one month's notice</li>
+                </ol>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h4 class="price">$50 per month</h4>
+            </article>
+
+            <article class="program_card">
+                <h3 class="program_title">Month+</h3>
+                <div class="program_shape">
+                    <img src="pricing_monthplus.png" alt="Month+ Image" class="program_img">
+                </div>
+                <hr>
+                <h4>Features:</h4>
+                <ol class="feature_description">
+                    <li>Priority class booking</li>
+                    <li>Exclusive access to workshops and events</li>
+                    <li>Discounts on merchandise and additional services</li>
+                    <li>Personalized fitness consultation with a trainer</li>
+                </ol>
+                <br>
+                <br>
+                <br>
+                <h4 class="price">$80 per month</h4>
+            </article>
+
+
+            <article class="program_card">
+                <h3 class="program_title">Yearly</h3>
+                <div class="program_shape">
+                    <img src="pricing_yearly.png" alt="Yearly Image" class="program_img">
+                </div>
+                <hr>
+                <h4>Features:</h4>
+                <ol class="feature_description">
+                    <li>Best value and savings compared to monthly plans</li>
+                    <li>Unlimited access to all classes and gym facilities</li>
+                    <li>Member-exclusive events and socials</li>
+                    <li>Complimentary fitness assessments and goal tracking with a trainer</li>
+                </ol>
+                <br>
+                <h4 class="price">$500.00 per year</h4>
+            </article>
+        </div>
+    </div>
+    <br>
+    <!--================= SIGN UP FORM =================-->
+    <h2>Sign-up</h2>
+    <br>
+    <div class="form_container">
+        <form id="reservationForm" name="reservationForm" action="submit.html">
+            <!-- CREDIT CARD SELECT -->
+            <div class="SelectField">
+                <label>Credit Card*</label>
+                <fieldset id="cards">
+                    <label class="cardLabel">
+                        <input name="credit" value="amex" type="radio" required />
+                        <span>American Express</span>
+                    </label>
+                    <label class="cardLabel">
+                        <input name="credit" value="discover" type="radio" />
+                        <span>Discover</span>
+                    </label>
+                    <label class="cardLabel">
+                        <input name="credit" value="master" type="radio" />
+                        <span>MasterCard</span>
+                    </label>
+                    <label class="cardLabel">
+                        <input name="credit" value="visa" type="radio" />
+                        <span>Visa</span>
+                    </label>
+                </fieldset>
+                <br>
+                <label for="gymMembership">Select your plan:</label>
+                <select name="gymMembership" id="gymMembership">
+                    <option value="" selected disabled>Plan Select</option>
+                    <option value="None">Free ($0.00 for 30 days)</option>
+                    <option value="49.99">Month ($50.00)</option>
+                    <option value="79.99">Month+ ($80.00)</option>
+                    <option value="99.99">Yearly ($500.00)</option>
+                </select>
+            </div>
+            <br>
+            <!-- FORM GRID -->
+            <div class="formGrid">
+                <!-- CC NUMBER -->
+                <div class="ReserveField">
+                    <label for="cardNumber">Credit Card Number*</label>
+                    <input type="text" id="cardNumber" name="cardNumber" required>
+                </div>
+                <!-- CC EXPIRATION DATE -->
+                <div class="ReserveField">
+                    <label for="expMonth">Expiration Date*</label>
+                    <select name="expMonth" id="expMonth" required>
+                        <option value="" selected disabled>Select Expiration Month</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <span id="separator"> / </span>
+                    <select id="expYear" name="expYear" required>
+                        <option value="" selected disabled>Select Expiration Year</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                    </select>
+                </div>
+                <!-- CC CVC NUMBER -->
+                <div class="ReserveField">
+                    <label for="cvc">CVC*</label>
+                    <input type="text" name="cvc" id="cvc" required pattern="^\d{3,4}$">
+                </div>
+                <!-- FIRST + LAST NAME -->
+                <div class="ReserveField">
+                    <label for="cardName">Name On Card*</label>
+                    <input name="cardName" id="cardName" required type="text">
+                </div>
+                <!-- E-MAIL -->
+                <div class="ReserveField">
+                    <label for="mail">E-mail*</label>
+                    <input name="email" id="mail" type="email" required>
+                </div>
+                <!-- PHONE NUMBER -->
+                <div class="ReserveField">
+                    <label for="phone">Phone Number*</label>
+                    <input name="telephone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" required>
+                </div>
+            </div>
+            <!-- SUBMIT BUTTONS -->
+            <div id="bottombuttons">
+                <br>
+                <input type="submit" value="Submit for Reservation">
+                <input type="reset" value="Cancel">
+            </div>
+        </form>
+    </div>
+
+</main>
+
+<footer>
+    <div class="footer_content">
+        <div class="footer_left">
+            <h1>Get Started<br>For Free</h1>
+            <p>Try our gym for 30 days with our <a href="membership.html">free Starter plan.</a> <br> Money back
+                guarantee!</p>
+            <p><br><br>©Copyright OneStopGym. All rights reserved</p>
+        </div>
+        <div class="footer_right">
+            <br>
+            <button class="href_button"><a href="index.html">
+                    <h2>Home</h2>
+                </a></button>
+            <button class="href_button"><a href="trainers.html">
+                    <h2>Trainers</h2>
+                </a></button>
+            <br>
+            <br>
+            <br>
+            <button class="member_button"><a href="#">
+                    <h2>Become a Member</h2>
+                </a></button>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

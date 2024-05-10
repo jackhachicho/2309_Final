@@ -1,0 +1,46 @@
+.trainers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.trainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.trainer img {
+    width: 60%;
+    border-radius: 20px;
+}
+
+.trainer p:first-child {
+    margin-top: 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 45%;
+}
+
+.social-media a {
+    margin: 0 5px;
+}
+
+hr {
+    width: 38%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.trainer p:last-child {
+    width: 60%;
+    margin-bottom: 30px;
+}

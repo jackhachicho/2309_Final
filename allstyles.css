@@ -1,0 +1,148 @@
+/* Header Styles */
+header {
+    background-image: linear-gradient(360deg, #FFFFFF, #85FFD3);
+    padding: 20px;
+}
+
+.header_container {
+    display: flex;
+    justify-content: center; 
+}
+
+.header_container nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1rem 10rem; 
+    background-color: green; 
+    width: 100%;
+    border-radius: 50px;
+}
+
+.header_container nav ul li {
+    text-align: right;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 25px;
+}
+
+.header_container nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    width: 100px; 
+}
+
+.logo_title li {
+    text-align: left;
+    padding-left: 100px;
+    color: #85FFD3;
+}
+
+.img_container {
+    display: flex;
+    justify-content: center;
+}
+  
+.img_container img {
+    width: 50%;
+    padding-top: 50px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+/* PARALAX */
+.navbar {
+    position: fixed;
+    top: 1;
+    width: 80%;
+    z-index: 1000; /* Ensure the navbar is above other content */
+    transition: background-color 0.3s ease; /* Add transition effect for smooth color change */
+}
+
+/* Footer Styles */  
+footer {
+    background-image: linear-gradient(180deg, #FFFFFF, #85FFD3);
+
+}
+
+h1 {
+    font-size: 60px;
+    font-family: Inter, Lexend, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+* {
+    font-family: Inter, Lexend, Geneva, Tahoma, sans-serif;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 50px;
+  }
+
+.footer_content {
+    display: flex; 
+    justify-content: space-between; 
+    width: 70%; 
+    margin: 0 auto; 
+    padding-left: 100px;
+}
+
+.footer_left {
+    text-align: left; 
+}
+
+.footer_right {
+    text-align: right; 
+}
+
+.footer_content h1, .footer_content p {
+    margin: 0; 
+}
+
+.href_button, .member_button {
+    padding: 10px 20px; 
+    border: none; 
+    background-color: transparent; 
+    color: inherit; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    font-size: 30px;
+}
+
+.href_button:hover, .member_button {
+    background-color: green; /* Change background color to green on hover */
+}
+
+.member_button:hover {
+    background-color: transparent; /* Change hover color to dark green */
+}
+
+.footer_right a {
+    color: black; 
+    text-decoration: none; 
+}
+
+.signup_button a {
+    color: #FFFFFF;
+    text-decoration: none; 
+}
+
+.footer_left a {
+    color: green;
+    text-decoration: none; 
+    font-weight: bold;
+}
+
